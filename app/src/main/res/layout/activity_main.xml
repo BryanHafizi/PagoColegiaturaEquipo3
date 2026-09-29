@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pago Colegiatura"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Entradas de datos -->
+        <EditText android:id="@+id/txtMatricula" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Matricula" />
+        <EditText android:id="@+id/txtNombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nombre" />
+        <EditText android:id="@+id/txtP1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Promedio P1" android:inputType="numberDecimal" />
+        <EditText android:id="@+id/txtP2" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Promedio P2" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/txtP3" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Promedio P3" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/txtCosto" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Costo Colegiatura" android:inputType="numberDecimal"/>
+
+        <!-- Botones (Rosas) -->
+        <Button android:id="@+id/btnPromedio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Promedio" android:backgroundTint="#D81B60" android:layout_marginTop="16dp"/>
+        <Button android:id="@+id/btnEstatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Estatus" android:backgroundTint="#D81B60"/>
+        <Button android:id="@+id/btnColegiatura" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Colegiatura" android:backgroundTint="#D81B60" android:layout_marginBottom="16dp"/>
+
+        <!-- Textos de Salida (Resultados) -->
+        <TextView android:id="@+id/txtResMatriculaNombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Matricula + Nombre" android:textSize="16sp" android:padding="8dp"/>
+        <TextView android:id="@+id/txtResPromedio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Promedio Global" android:textSize="16sp" android:padding="8dp"/>
+        <TextView android:id="@+id/txtResCostoActual" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Colegiatura Actual" android:textSize="16sp" android:padding="8dp"/>
+        <TextView android:id="@+id/txtResCostoFinal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Colegiatura final" android:textSize="16sp" android:padding="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
